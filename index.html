@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    ::selection {
+        color: rgba(2, 87, 9, 0.8);
+    }
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background: #000000f8;
+        color: rgb(210, 250, 212);
+    }
+    div {
+        height: cal(100vh-"10px");
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2vh;
+    }
+    img {
+        width: 20vw;
+    }
+    span {
+        font-weight: bolder;
+        font-size: larger;
+    }
+</style>
+<body>
+    <div>
+        <img src="https://res.cloudinary.com/dd6chx3xb/image/upload/v1702129467/a6ryc6gvv7mgq21idwno.png" alt="">
+        <h1>Farmer's Palm.</h1>
+        <h4>Products from the Farm</h4>
+        <br />
+        <p><span>${otp} </span>is the OTP to login/sign up Farmer's Palm into your account. It is valid for 5 minutes.</p>
+        <p>DO NOT disclose it to anyone for security reasons.</p>
+        <h3 class="footer">©️ All right's reserved - 2023</h3>
+    </div>
+</body>
+</html>
