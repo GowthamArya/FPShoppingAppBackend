@@ -9,12 +9,7 @@ const otpRouter = require("./routes/otp");
 const orderRouter = require("./routes/order")
 const cors = require("cors");
 
-app.use(
-    cors({
-        origin: 'http://localhost:3000',
-        credentials: true,
-    })
-);
+app.use(cors());
 require("dotenv").config();
 require("./config/dataBase").mongoDB();
 
